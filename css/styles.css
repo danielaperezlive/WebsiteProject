@@ -1,0 +1,311 @@
+/*
+Montserrat (https://www.google.com/fonts/specimen/Montserrat)
+Raleway (https://www.google.com/fonts/specimen/Raleway)
+
+
+Colours: 
+beige: #f8f8f8
+pinky/orange: #fb7170 */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/** {
+	border: 1px solid red;
+} */
+
+/* ELEMENTS AS THEY APPEAR IN HTML */
+
+/* ------BODY----- */
+
+h1, h2, h3, h4, {
+	font-family: Raleway, serif;
+	text-transform: uppercase;
+}
+
+h3 {
+	margin: 0 auto;
+	font-weight: 800;
+	font-size: 30px;
+	text-align: center;
+	padding: 100px 50px;
+}
+
+h5 {
+	font-family: Montserrat, sans-serif;
+}
+
+p {
+	font-family: Montserrat, sans-serif;
+	font-size: 13px;
+}
+
+/* -----NAVIGATION----- */
+
+nav {
+	background-color: #f8f8f8;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+ 	list-style-type: none;
+ 	text-align: center;
+ 	font-family: Raleway, serif;
+ 	text-transform: uppercase;
+}
+
+nav li {
+	display: inline-block;
+	padding: 15px;
+}
+
+/* -----FOOTER----- */
+
+footer {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/* CLASSES AS THEY APPEAR IN HTML */
+
+/* ----- NAVIGATION ----- */
+
+.top-bar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.toptext {
+	font-family: Raleway, serif;
+	text-transform: uppercase;
+}
+
+/* Parent - Flex Bar */
+.flexBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+/* Children */
+.nav1 {
+	width: 25%;
+}
+
+.nav-bar {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Parent - Flex Nav */
+.flexNav {
+	display: flex;
+	justify-content: center;
+}
+
+/* Children */
+.logo {
+	margin: auto;
+}
+
+.nav {
+	margin: auto;
+}
+
+ul.nav a {
+	color: black;
+	padding-bottom: 10px;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+ul.nav a:hover {
+	color: red;
+	border-bottom: 2px solid gray;
+}
+
+/* ----- HEADER IMAGE ----- */
+
+.fashion {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+/* ----- GALLERY ----- */
+
+.gallery {
+	max-width: 1240px;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+/* Parent - Gallery: Flex Container */
+.flexContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between; 
+	justify-content: center;
+}
+
+/* Children */
+.image {
+	width: 100%;
+}
+
+.galleryItem {
+	width: 300px;
+	height: 300px;
+    background-color: #f8f8f8;
+    border: #333 solid 1px;
+    margin: 5px;
+}
+
+.galleryItem img {
+	width: 100%;
+	height: auto;
+}
+
+/* ----- ABOUT SECTION ----- */
+
+/* Parent */
+.flexBanner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Children */
+
+.aboutImage {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.aboutProduct {
+	position: absolute;
+	align-items: center;
+}
+
+.flexBanner p {
+	color: white;
+	font-size: 20px;
+}
+/* ----- COMPANY LOGOS ----- */
+
+.companylogo {
+	max-width: 900px;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+/* Parent - Flex Logo */
+.flexLogo {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+/* Children */
+.logoItems {
+	align-items: center;
+}
+
+.logoItems img{
+	padding: 20px;
+	width: 100%;
+	height: auto;
+}
+
+/* -------- SERVICE ICONS --------*/
+
+.services {
+	max-width: 900px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+/* Parent - Flex Service */
+.flexService {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Children */
+.serviceIcon {
+	width: 30%;
+	display: inline-block;
+	align-self: center;
+	border: 1px solid gray;
+	border-radius: 5px
+}
+
+.serviceWords {
+	max-width: 100%;
+	font-family: Raleway, serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	vertical-align: 50%;
+}
+
+
+/* -------- SOCIAL MEDIA BAR -------- */
+
+.bottombar {
+	background-color: #f8f8f8;
+}
+
+.social {
+	max-width: 900px;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #f8f8f8;
+}
+
+.newstyle {
+	font-family: Raleway,serif;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+/* Parent - Flex Bar - Repeat: SEE ABOVE */
+
+/*Children*/
+.socialFashion {
+	width: 25%;
+}
+.socialBar {
+	width: 25%;
+}
+ 
+.special {
+	font-family: Raleway, serif;
+	text-transform: uppercase;
+	color: red;
+}
+
+/*Form*/
+
+input[type="submit"] {
+	padding: 5px 10px;
+	background: #f8f8f8;
+	border: 1px solid gray;
+}
+
+/* -------- FOOTER -------- */
+
+.footer {
+	padding: 50px 0;
+}
